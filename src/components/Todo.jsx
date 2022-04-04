@@ -27,7 +27,7 @@ const Todo = () => {
         <div className='todo'>
             <h1>Список задач</h1>
                 <TodoForm value={value} adderTodoItemBtn={adderTodoItemBtn} handleTodoInput={handleTodoInput} />
-            <h2>Текущие задачи:{}</h2>
+            <h2>Текущие задачи: {todos.length}</h2>
             { todos.map((item,i) => {
              return <TodoItem 
                 key={i}
